@@ -1,0 +1,427 @@
+    1  exit
+    2  clear'
+    3  clear
+    4  ifconfig
+    5  clear
+    6  hostname puppet
+    7  echo puppet > /etc/hostname 
+    8  exsc bash
+    9  exec bash
+   10  rdfile /etc/hostname
+   11  clear
+   12  nano /etc/hostname 
+   13  nano /etc/hosts
+   14  ping node1
+   15  ping 192.168.56.102
+   16  ping -a 192.168.56.102
+   17  nslookup 192.168.56.102
+   18  ping node1
+   19  nano /etc/hosts
+   20  ping node1
+   21  ping puppet
+   22  ping node2
+   23  nslookup node1
+   24  ping -a 192.168.56.103
+   25  clear
+   26  version
+   27  clear
+   28  uname
+   29  uname -a
+   30  wget https://apt.puppetlabs.com/puppet5-release-xenial.deb
+   31  ls
+   32  dpkg -i puppet5-release-xenial.deb 
+   33  apt-get update
+   34  apt-get install puppetserver 
+   35  service puppetserver status 
+   36  puppet
+   37  cd /opt/
+   38  ls
+   39  cd puppetlabs/
+   40  ls
+   41  cd bin/
+   42  ls
+   43  puppet
+   44  export PATH=$PATH:/opt/puppetlabs/bin
+   45  puppet
+   46  puppet help
+   47  cd /
+   48  puppet help
+   49  status
+   50  puppet status
+   51  cd /etc/puppetlabs/
+   52  ls
+   53  nano /etc/default/puppetserver 
+   54  puppet status
+   55  service puppetserver status 
+   56  cd /
+   57  puppet resource service puppetserver ensure=running
+   58  service puppetserver status 
+   59  puppet resource service puppetserver ensure=status
+   60  puppet resource service puppetserver status
+   61  puppet resource service puppetserver ensur
+   62  service puppetserver status 
+   63  clear
+   64  cd /etc/puppetlabs/
+   65  ls
+   66  cd  puppet
+   67  ls
+   68  cd ssl
+   69  ls
+   70  cd /
+   71  service puppet status
+   72  version puppet
+   73  puppet --version
+   74  factor --version
+   75  facter --version
+   76  hiera --version
+   77  puppetserver --version
+   78  service puppetserver status
+   79  puppet cert list -a
+   80  puppet cert sign -a
+   81  puppet cert list -a
+   82  puppet cert sign -a
+   83  puppet cert list -a
+   84  ls
+   85  puppet cert clean node2.medusa.mezzonet.net
+   86  puppet cert list -a
+   87  ls
+   88  cd /etc/puppetlabs/
+   89  ls
+   90  cd code
+   91  ls
+   92  cd environments/
+   93  ls
+   94  cd production/
+   95  ls
+   96  cd manifests/
+   97  ls
+   98  nano site.pp
+   99  ls
+  100  cd ..
+  101  cd ..\
+  102  cd ..
+  103  ls
+  104  cd puppetserver/
+  105  ks
+  106  ls
+  107  rdfile logback.xml 
+  108  refile logback.xml 
+  109  cd /var/log/
+  110  ls
+  111  cd puppetlabs/
+  112  las
+  113  ls
+  114  cd puppetserver/
+  115  ls
+  116  puppetserver 
+  117  nano puppetserver
+  118  cd /
+  119  cd /etc/puppetlabs/code/environments/production/manifests/
+  120  ls
+  121  nano site.pp 
+  122  puppet parser validate site.pp
+  123  nano site.pp 
+  124  puppet parser validate site.pp
+  125  nano site.pp 
+  126  puppet parser validate site.pp
+  127  nano site.pp 
+  128  puppet parser validate site.pp
+  129  nano site.pp 
+  130  puppet parser validate site.pp
+  131  nano site.pp 
+  132  puppet parser validate site.pp
+  133  nano site.pp 
+  134  puppet parser validate site.pp
+  135  nano site.pp 
+  136  puppet parser validate site.pp
+  137  nano site.pp 
+  138  puppet parser validate site.pp
+  139  nano site.pp 
+  140  cd ..
+  141  cd /
+  142  puppet cert list -a
+  143  puppet cert sign -a
+  144  puppet cert list -a
+  145  cd /etc/puppetlabs/code/
+  146  ls
+  147  c /
+  148  cd /
+  149  cd etc/puppetlabs/puppetserver/
+  150  ls
+  151  cd ..
+  152  cd puppet
+  153  ls
+  154  cd /manifest
+  155  c ..
+  156  cd ..
+  157  ls
+  158  cd code/
+  159  ls
+  160  cd modules/
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd environments/
+  165  ls
+  166  cd production/
+  167  ls
+  168  cd manifests/
+  169  nano site.pp
+  170  puppet cert list -a
+  171  nano site.pp
+  172  puppet cert list -a
+  173  nano site.pp
+  174  cd //
+  175  cd /
+  176  ls
+  177  cd /etc/puppetlabs/code/modules/
+  178  ls
+  179  puppet help module
+  180  puppet module generate node1
+  181* puppet module generate node1 
+  182  puppet help module generate
+  183  puppet module generate --skip-interview node1
+  184  puppet module generate --skip-interview root-node1
+  185  cd ..
+  186  cd modules/
+  187  ks
+  188  ls
+  189  cd node1
+  190  ls
+  191  cd manifests/
+  192  ls
+  193  nano init.pp 
+  194  ls
+  195  nano user.pp
+  196  nano init.pp
+  197  ls
+  198  cd ..
+  199  cd .
+  200  cd ..
+  201  ls
+  202  cd ..
+  203  ls
+  204  cd environments/
+  205  ls
+  206  cd production/
+  207  ls
+  208  cd manifests/
+  209  ls
+  210  nano site.pp
+  211  cd /code
+  212  cd ./code
+  213  cd ..
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd modules
+  218  ls
+  219  cd node1
+  220  ls
+  221  cd manifests/
+  222  ls
+  223  nano init.pp 
+  224  nano filecreate.pp
+  225  nano init.pp 
+  226  nano filecreate.pp
+  227  nano site.pp
+  228  cd ..
+  229  ls
+  230  cd environments/
+  231  cd production/
+  232  ls
+  233  cd manifests/
+  234  ls
+  235  nano site.pp
+  236  cd ..
+  237  ls
+  238  cd modules/
+  239  ls
+  240  cd ..
+  241  ls
+  242  cd modules/
+  243  ls
+  244  cd node1
+  245  ls
+  246  cd ..
+  247  cd modules/
+  248  ls
+  249  cd .
+  250  cd ..
+  251  cd modules/
+  252  ls
+  253  cd ..
+  254  ls
+  255  cd environments/
+  256  ls
+  257  cd production/
+  258  ls
+  259  cd modules/
+  260  ls
+  261  cd .
+  262  cd ..
+  263  cd  manifests/
+  264  ls
+  265  nano site.pp
+  266  puppet parser validate site.pp
+  267  cd ..
+  268  ls
+  269  cd modules/
+  270  ls
+  271  cd node1
+  272  ls
+  273  cd manifests/
+  274  ls
+  275  nano filecreate.pp 
+  276  cd ..
+  277  c ..
+  278  cd ..
+  279  ls
+  280  ccd ..
+  281  cd ..
+  282  ls
+  283  cd environments/
+  284  ls
+  285  cd production/
+  286  ls
+  287  cd modules/
+  288  ls
+  289  cd ..
+  290  ls
+  291  cd manifests/
+  292  ls
+  293  nano site.pp 
+  294  cd ..
+  295  ls
+  296  cd modules/
+  297  cd node1/
+  298  ls
+  299  cd manifests/
+  300  ls
+  301  nano filecreate.pp 
+  302  cd ..
+  303  cd ...
+  304  cd .
+  305  cd ..
+  306  ls
+  307  cd environments/
+  308  cd production/
+  309  ls
+  310  cd modules/
+  311  ls
+  312  c .
+  313  cd ..
+  314  ls
+  315  cd manifests/
+  316  ls
+  317  nano site.pp 
+  318  cd ..
+  319  c ..
+  320  cd ..
+  321  ls
+  322  cd  modules/
+  323  ls
+  324  cd  node1
+  325  ls
+  326  cd  manifests/
+  327  ls
+  328  nano init.pp 
+  329  ls
+  330  nano filecreate.pp 
+  331  nano init.pp 
+  332  cd /etc/puppetlabs/
+  333  ls
+  334  cd puppet
+  335  ls
+  336  cat puppet.conf 
+  337  cd ..
+  338  ls
+  339  cd puppetserver/
+  340  ls
+  341  cd ..
+  342  puppet help
+  343  puppet agent help
+  344  puppet help agent
+  345  puppet agent node1
+  346  cat /etc/hosts
+  347  ping node1
+  348  puppet agent node1
+  349  puppet help agent
+  350  puppet agent --server node1
+  351  puppet agent --server puppet
+  352  puppet help
+  353  puppet help doc
+  354  puppet doc --list
+  355  puppet doc --list providers
+  356  cdls
+  357  ls
+  358  cd puppetserver/
+  359  ls
+  360  cd ..
+  361  cd puppet
+  362  ls
+  363  cd ..
+  364  ls
+  365  cd puppetlabs/
+  366  ls
+  367  cd code
+  368  ls
+  369  cd environments/
+  370  ls
+  371  mkdir test
+  372  ls
+  373  dc test
+  374  cd tes
+  375  cd test
+  376  ls
+  377  nano site.pp
+  378  cd ..
+  379  cd production/
+  380  ls
+  381  cd manifests/
+  382  ls
+  383  cat site.pp 
+  384  cd ..
+  385  cd test/
+  386  ls
+  387  cat site.pp 
+  388  nano site.pp 
+  389  cat site.pp 
+  390  nano site.pp 
+  391  mkdir manifests
+  392  ls
+  393  cp site.pp /manifests
+  394  cd  manifests/
+  395  ls
+  396  cp site.pp /manifests/
+  397  cp site.pp /manifests
+  398  cp site.pp manifests
+  399  cp /site.pp manifests
+  400  cd ..
+  401  cp /site.pp manifests
+  402  cp /site.pp /manifests
+  403  cp site.pp /manifests
+  404  cp site.pp /manifests/
+  405  rm site.pp 
+  406  cd  manifests/
+  407  ls
+  408  nano site.pp
+  409  cdd ..
+  410  cd ..
+  411  ls
+  412  cd ..
+  413  ls
+  414  cd puppet
+  415  ;s
+  416  cd ..
+  417  ls
+  418  cd puppet
+  419  ls
+  420  cat puppet.conf 
+  421  cd ..
+  422  ls
+  423  cd puppetserver/
+  424  ls
+  425  cd ..
+  426  cd code/
+  427  history > mycommand.txt
